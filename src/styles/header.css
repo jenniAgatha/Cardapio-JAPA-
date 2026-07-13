@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+}
+
+
+
+
+
+.titulo-chapeu-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 150px;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+
+}
+
+
+.titulo-header1 {
+  margin: 0;
+  max-width: 350px; 
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.05;
+  text-align: left;
+  color: transparent;
+  background: linear-gradient(135deg, #d4af37 0%, #a8823a 40%, #6b4a1f 70%, #4a3315 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-left: 100px;
+}
+
+.chapeu {
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: initial; /* deixa o emoji com cor normal, não o gradiente */
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+  transform: rotate(20deg);
+  margin-right: 30px;
+
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border: 3px solid #825F29;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: black;
+  font-size: 1.em;
+  font-weight: 550;
+  color: #825F29;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+
+.btn:hover {
+  background: #825F29;
+  color: black;
+  font-size: 1.em;
+}
+
+
+@media (max-width: 768px) {
+  .titulo-chapeu-container {
+    margin-top: 80px;
+    gap: 0.3rem;
+  }
+
+  .header-content {
+    padding: 1.5rem;
+  }
+}
+
+/* 📱 Ajustes para celular */
+@media (max-width: 480px) {
+  .titulo-chapeu-container {
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-content {
+    padding: 1rem;
+    align-items: center;
+  }
+
+
+
+
+
+
+

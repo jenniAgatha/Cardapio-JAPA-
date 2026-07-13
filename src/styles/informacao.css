@@ -1,0 +1,38 @@
+.card2{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 100px;
+    color: #c79a4f;
+}
+
+.card2-content{
+    width: min(1120px, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 40px 0;
+}
+
+.card2-title{
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 0.96;
+    margin: 0;
+    color: #d1aa5f;
+    font-weight: 700;
+}
+
+.card2-icon{
+    font-size: clamp(3rem, 7vw, 6rem);
+    color: #d1aa5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
